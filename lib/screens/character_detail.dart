@@ -100,10 +100,19 @@ class CharacterDetail extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  SizedBox(height: 20.0),
+                  _buildInfoSection('Origin', character.origin.name),
+                  SizedBox(height: 20.0),
+                  _buildInfoSection('Location', character.location.name),
                   SizedBox(height: 20),
                   _buildInfoSection('Species', character.species),
                   SizedBox(height: 20),
                   _buildInfoSection('Gender', character.gender),
+                  SizedBox(height: 20),
+                  _buildInfoSection(
+                    'Episodes',
+                    character.episode.length.toString(),
+                  ),
                   SizedBox(height: 20),
                   if (character.type.isNotEmpty)
                     _buildInfoSection('Type', character.type),
