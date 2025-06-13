@@ -1,3 +1,3 @@
-# flutter_application_1
+# Rick and Morty
 
-A new Flutter project.
+Proyecto Flutter basada en el universo de Rick and Morty.

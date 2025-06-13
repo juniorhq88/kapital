@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/screens/characters_list.dart';
+import 'package:flutter_application_1/screens/splash_screen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -13,7 +13,7 @@ class MainApp extends StatelessWidget {
     return const MaterialApp(
       title: 'Rick and Morty characters',
       debugShowCheckedModeBanner: false,
-      home: CharacterList(key: Key('character_list')),
+      home: SplashScreen(key: Key('splash_screen')),
     );
   }
 }
